@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Become a Member — OSEM</title>
+  <meta name="description" content="Register as an official member of OSEM, the Old Semesrans' Association of SM Sains Rembau.">
+  <meta name="theme-color" content="#7A1622">
+  <link rel="icon" type="image/png" href="assets/img/osem-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="OSEM home">
+        <img src="assets/img/osem-logo.png" alt="" width="42" height="40">
+        <span class="brand-text"><strong>OSEM</strong><span>Old Semesrans' Association</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#programs">Programs</a></li>
+          <li><a href="index.html#events">Events</a></li>
+          <li><a href="about.html#committee">Leadership</a></li>
+          <li><a href="index.html#support">Get Involved</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero reg-hero" aria-labelledby="page-title">
+      <div class="container page-hero-top">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#support">Get Involved</a></li>
+              <li aria-current="page">Membership registration</li>
+            </ol>
+          </nav>
+          <h1 id="page-title">Become a member<br><strong>of the OSEM family</strong></h1>
+        </div>
+        <p class="page-hero-lede">Register as an official Semesran alumni member. It takes about five minutes, and the committee will confirm your membership by email.</p>
+      </div>
+    </section>
+
+    <!-- ============ FORM ============ -->
+    <section class="reg-section" aria-label="Registration form">
+      <div class="container reg-grid">
+
+        <div class="reg-main">
+          <div class="error-summary" id="error-summary" tabindex="-1" role="alert" hidden>
+            <h2>Please check <span class="error-count">a few</span> details</h2>
+            <ul></ul>
+          </div>
+
+          <form class="reg-form" id="reg-form" novalidate>
+            <p class="reg-required-note">Fields marked <span aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
+
+            <!-- 01 About you -->
+            <fieldset class="reg-group" id="sec-personal">
+              <legend><span class="reg-num" aria-hidden="true">01</span>About you</legend>
+              <div class="field">
+                <label for="fullName">Your name <span aria-hidden="true">*</span></label>
+                <input id="fullName" name="fullName" type="text" autocomplete="name" required aria-describedby="fullName-help fullName-err">
+                <p class="help" id="fullName-help">As it appears on your MyKad or passport.</p>
+                <p class="error" id="fullName-err"></p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="email">Email <span aria-hidden="true">*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err" placeholder="name@example.com">
+                  <p class="error" id="email-err"></p>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="phone-help phone-err" placeholder="+60 12-345 6789">
+                  <p class="help" id="phone-help">Include your country code if you live outside Malaysia.</p>
+                  <p class="error" id="phone-err"></p>
+                </div>
+              </div>
+              <div class="field field-narrow">
+                <label for="dob">Date of birth <span aria-hidden="true">*</span></label>
+                <input id="dob" name="dob" type="date" autocomplete="bday" required aria-describedby="dob-err">
+                <p class="error" id="dob-err"></p>
+              </div>
+            </fieldset>
+
+            <!-- 02 Semesra years -->
+            <fieldset class="reg-group" id="sec-school">
+              <legend><span class="reg-num" aria-hidden="true">02</span>Your Semesra years</legend>
+              <div class="field-row field-row-3">
+                <div class="field">
+                  <label for="batch">Batch <span aria-hidden="true">*</span></label>
+                  <select id="batch" name="batch" required aria-describedby="batch-err">
+                    <option value="">Select batch</option>
+                    <option>Valedictorian</option>
+                    <option>Prodigy</option>
+                    <option>Extrovert</option>
+                    <option>Zealous</option>
+                  </select>
+                  <p class="error" id="batch-err"></p>
+                </div>
+                <div class="field">
+                  <label for="batchCycle">Batch cycle <span aria-hidden="true">*</span></label>
+                  <select id="batchCycle" name="batchCycle" required aria-describedby="batchCycle-err">
+                    <option value="">Select cycle</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <p class="error" id="batchCycle-err"></p>
+                </div>
+                <div class="field">
+                  <label for="house">House <span aria-hidden="true">*</span></label>
+                  <select id="house" name="house" required aria-describedby="house-err">
+                    <option value="">Select house</option>
+                    <option value="LM">Lela Maharaja (LM)</option>
+                    <option value="JP">Johan Pahlawan (JP)</option>
+                    <option value="KP">Kelana Petra (KP)</option>
+                    <option value="AZ">Akhirul Zaman (AZ)</option>
+                  </select>
+                  <p class="error" id="house-err"></p>
+                </div>
+              </div>
+              <p class="batch-preview" id="batch-preview" aria-live="polite" hidden>You'll be listed as <strong></strong></p>
+            </fieldset>
+
+            <!-- 03 Where you are now -->
+            <fieldset class="reg-group" id="sec-location">
+              <legend><span class="reg-num" aria-hidden="true">03</span>Where you are now</legend>
+              <div class="field-row">
+                <div class="field">
+                  <label for="country">Country of residence <span aria-hidden="true">*</span></label>
+                  <input id="country" name="country" type="text" list="countries" autocomplete="country-name" value="Malaysia" required aria-describedby="country-err">
+                  <p class="error" id="country-err"></p>
+                </div>
+                <div class="field">
+                  <label for="state">Current address (state) <span aria-hidden="true">*</span></label>
+                  <select id="state" name="state" required aria-describedby="state-help state-err">
+                    <option value="">Select state</option>
+                    <option>Johor</option>
+                    <option>Kedah</option>
+                    <option>Kelantan</option>
+                    <option>Melaka</option>
+                    <option>Negeri Sembilan</option>
+                    <option>Pahang</option>
+                    <option>Perak</option>
+                    <option>Perlis</option>
+                    <option>Pulau Pinang</option>
+                    <option>Sabah</option>
+                    <option>Sarawak</option>
+                    <option>Selangor</option>
+                    <option>Terengganu</option>
+                    <option>W.P. Kuala Lumpur</option>
+                    <option>W.P. Labuan</option>
+                    <option>W.P. Putrajaya</option>
+                    <option>Outside Malaysia</option>
+                  </select>
+                  <p class="help" id="state-help">Living abroad? Choose "Outside Malaysia".</p>
+                  <p class="error" id="state-err"></p>
+                </div>
+              </div>
+              <div class="field field-reveal" id="city-field" hidden>
+                <label for="city">Where do you live? <span aria-hidden="true">*</span></label>
+                <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="e.g. London" aria-describedby="city-help city-err" disabled>
+                <p class="help" id="city-help">Your city or area abroad.</p>
+                <p class="error" id="city-err"></p>
+              </div>
+            </fieldset>
+
+            <!-- 04 Education -->
+            <fieldset class="reg-group" id="sec-education">
+              <legend><span class="reg-num" aria-hidden="true">04</span>Education</legend>
+              <div class="field-row">
+                <div class="field">
+                  <label for="eduLevel">Highest education level <span aria-hidden="true">*</span></label>
+                  <select id="eduLevel" name="eduLevel" required aria-describedby="eduLevel-err">
+                    <option value="">Select level</option>
+                    <option>SPM</option>
+                    <option>Diploma</option>
+                    <option>Bachelor's Degree</option>
+                    <option>Master's Degree</option>
+                    <option>PhD</option>
+                  </select>
+                  <p class="error" id="eduLevel-err"></p>
+                </div>
+                <div class="field">
+                  <label for="course">Course of study</label>
+                  <input id="course" name="course" type="text" placeholder="e.g. Mechanical Engineering" aria-describedby="course-help">
+                  <p class="help" id="course-help">Your main field of study. Leave blank if SPM is your highest level.</p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="institutions">Education institutions</label>
+                <textarea id="institutions" name="institutions" rows="4" placeholder="Kolej Matrikulasi Negeri Sembilan&#10;Universiti Teknologi Malaysia" aria-describedby="institutions-help"></textarea>
+                <p class="help" id="institutions-help">List each institution you attended after SPM, one per line.</p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="instCountry">Country of institution</label>
+                  <input id="instCountry" name="instCountry" type="text" list="countries" aria-describedby="instCountry-help">
+                  <p class="help" id="instCountry-help">Where you studied for your highest qualification.</p>
+                </div>
+                <div class="field">
+                  <label for="scholarship">Scholarship</label>
+                  <input id="scholarship" name="scholarship" type="text" placeholder="e.g. JPA, MARA, Petronas or None" aria-describedby="scholarship-help">
+                  <p class="help" id="scholarship-help">The sponsor of your studies, if any.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- 05 Career -->
+            <fieldset class="reg-group" id="sec-career">
+              <legend><span class="reg-num" aria-hidden="true">05</span>Career</legend>
+              <div class="field-row">
+                <div class="field">
+                  <label for="job">Current job</label>
+                  <input id="job" name="job" type="text" autocomplete="organization-title" placeholder="e.g. Process Engineer, or Student" aria-describedby="job-help">
+                  <p class="help" id="job-help">Your job title. Students can write "Student".</p>
+                </div>
+                <div class="field">
+                  <label for="industry">Industry</label>
+                  <select id="industry" name="industry">
+                    <option value="">Select industry</option>
+                    <option>Academia &amp; Research</option>
+                    <option>Accounting &amp; Finance</option>
+                    <option>Agriculture &amp; Plantation</option>
+                    <option>Architecture &amp; Construction</option>
+                    <option>Aviation &amp; Aerospace</option>
+                    <option>Banking &amp; Islamic Finance</option>
+                    <option>Consulting</option>
+                    <option>Creative, Media &amp; Design</option>
+                    <option>Education</option>
+                    <option>Energy, Oil &amp; Gas</option>
+                    <option>Engineering &amp; Manufacturing</option>
+                    <option>Government &amp; Public Service</option>
+                    <option>Healthcare &amp; Medicine</option>
+                    <option>Hospitality &amp; Tourism</option>
+                    <option>Information Technology</option>
+                    <option>Legal</option>
+                    <option>Non-profit &amp; Social Enterprise</option>
+                    <option>Retail &amp; E-commerce</option>
+                    <option>Telecommunications</option>
+                    <option>Transport &amp; Logistics</option>
+                    <option>Student</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Consent + submit -->
+            <div class="reg-submit">
+              <div class="check-field">
+                <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-err">
+                <label for="consent">I agree that OSEM may store and use these details to manage my membership and contact me about alumni activities, in line with the Personal Data Protection Act 2010. <span aria-hidden="true">*</span></label>
+              </div>
+              <p class="error" id="consent-err"></p>
+              <button type="submit" class="btn btn-primary btn-lg">Submit registration</button>
+            </div>
+          </form>
+
+          <!-- Success state -->
+          <div class="reg-success" id="reg-success" tabindex="-1" hidden>
+            <span class="reg-success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h2>Welcome home, <span class="reg-success-name">Semesran</span>.</h2>
+            <p>Your registration has been received. The committee will verify your details and confirm your membership by email within 7 working days.</p>
+            <div class="reg-success-actions">
+              <a href="index.html#events" class="btn btn-primary">See upcoming events</a>
+              <a href="index.html" class="btn-link">Back to home <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ ASIDE ============ -->
+        <aside class="reg-aside" aria-label="About membership">
+          <div class="reg-aside-card">
+            <img src="assets/img/osem-logo.png" alt="" width="72" height="68">
+            <h2>Why join OSEM?</h2>
+            <ul class="checklist">
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Invitations to homecoming, reunions and batch events</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Access to the Semesran career and mentorship network</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>A vote at the Annual General Meeting</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Ways to give back to SM Sains Rembau</li>
+            </ul>
+          </div>
+          <nav class="reg-steps" aria-label="Form sections">
+            <p class="eyebrow">In this form</p>
+            <ol>
+              <li><a href="#sec-personal">About you</a></li>
+              <li><a href="#sec-school">Your Semesra years</a></li>
+              <li><a href="#sec-location">Where you are now</a></li>
+              <li><a href="#sec-education">Education</a></li>
+              <li><a href="#sec-career">Career</a></li>
+            </ol>
+          </nav>
+          <p class="reg-help">Questions about membership? <a href="index.html#contact">Contact the committee</a>.</p>
+        </aside>
+      </div>
+    </section>
+
+    <datalist id="countries">
+      <option value="Malaysia"></option>
+      <option value="Australia"></option>
+      <option value="Brunei"></option>
+      <option value="Canada"></option>
+      <option value="China"></option>
+      <option value="Egypt"></option>
+      <option value="France"></option>
+      <option value="Germany"></option>
+      <option value="Hong Kong"></option>
+      <option value="India"></option>
+      <option value="Indonesia"></option>
+      <option value="Ireland"></option>
+      <option value="Japan"></option>
+      <option value="Jordan"></option>
+      <option value="Netherlands"></option>
+      <option value="New Zealand"></option>
+      <option value="Qatar"></option>
+      <option value="Russia"></option>
+      <option value="Saudi Arabia"></option>
+      <option value="Singapore"></option>
+      <option value="South Korea"></option>
+      <option value="Taiwan"></option>
+      <option value="Thailand"></option>
+      <option value="Turkey"></option>
+      <option value="United Arab Emirates"></option>
+      <option value="United Kingdom"></option>
+      <option value="United States"></option>
+    </datalist>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/osem-logo.png" alt="OSEM crest" width="84" height="79" loading="lazy">
+        <p>Old Semesrans' Association, the alumni of Sekolah Menengah Sains Rembau.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#programs">Programs</a></li>
+          <li><a href="index.html#events">Events</a></li>
+          <li><a href="about.html#committee">Leadership</a></li>
+          <li><a href="index.html#support">Get Involved</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> OSEM. All rights reserved.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/register.js" defer></script>
+</body>
+</html>
